@@ -1,6 +1,6 @@
 const makeParagraph = (sentence) => {
   let paragraph = '';
-  sentence.forEach((sen) => paragraph = paragraph + sen + ' ')
+  sentence.map((sen) => paragraph = paragraph + sen + ' ')
   return paragraph.trim()
 }
 
@@ -8,7 +8,7 @@ const averageDogAge = (dogs) => {
   let avg = 0;
   let count = 0;
   
-  dogs.forEach(dog => {
+  dogs.map(dog => {
     if(dog.species === 'dog') {
       avg = avg + dog.age
       count++;
