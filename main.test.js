@@ -388,7 +388,7 @@ describe('Faqtory.addQuestion', () => {
       id: 0
     }
 
-    faqtory.addQuestion('What is your site all about?');
+    faqtory.addQuestion(' ');
     expect(faqtory.questions[0].text).toBe(question.text);
     expect(faqtory.questions[0].id).toBe(question.id);
   })
